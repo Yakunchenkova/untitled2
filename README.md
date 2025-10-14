@@ -5,14 +5,14 @@
 2. Перейти по ссылке https://practice-automation.com/form-fields/
 Шаги:
 1. Заполнить поле Namе Olga 
-2. Оставить пустым поле Password
+2. Заполинть поле Password 12345
 3. Из списка What is your favorite drink? выбрать Wine и Water
 4. Из списка What is your favorite color? выбрать Blue
 5. В поле Do you like automation? выбрать Yes
 6. Поле Email заполнить строкой name@example.com
 7. В поле Message написать количество favorite color, описанных в пункте What is your favorite color?
 8. Нажать на кнопку Submit
-Ожидаемый результат: курсор переместиться в поле Password!
+Ожидаемый результат: должно появится сообщение, что пароль должен содеражть строчные и заглавные буквы, спецсимволы, цифры и быть не меньше 8 знаков.   !
 
 Негативный тест 2 
 Предусловие:
