@@ -3,7 +3,6 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
@@ -23,13 +22,13 @@ public class TestYakunchenkova {
 
     }
 
-   // @AfterEach
-    //public void closeDriver(){
-    //    if(driver != null){
-    //        driver.close();
-    //        driver.quit();
-    //    }
-   // }
+    /* @AfterEach
+     public void closeDriver(){
+         if(driver != null){
+             driver.close();
+             driver.quit();
+        }
+    } */
 
     @Test
     public void registration(){
@@ -38,11 +37,28 @@ public class TestYakunchenkova {
         driver.findElement(By.xpath(("//*[@type = \"password\"]"))).sendKeys("123");
         driver.findElement(By.id("drink2")).click();
         driver.findElement(By.id("drink3")).click();
-        //WebElement color3 = driver.findElement(By.id("color3"));
-           //     color3.click(); - нужно спуститься ниже по странице.
-        //jse = (JavascriptExecutor)driver;
-       // jse.executeScript("document.getElementById('color3').value = 'Yellow';");
-       // jse.executeScript("window.scrollBy(0,500)",");
+        /* ТРЕБУЕТ ДОРАБОТКИ!!!
+        WebElement color3 = driver.findElement(By.id("color3"));
+                color3.click(); - нужно спуститься ниже по странице.
+        jse = (JavascriptExecutor)driver;
+        jse.executeScript("document.getElementById('color3').value = 'Yellow';");
+        jse.executeScript("window.scrollBy(0,500)",");
         driver.findElement(By.id("automation")).click();
+
         List<WebElement> allUl = driver.findElements(By.tagName("ul"));
         int number = allUl.size();
+        for(WebElement oneUl : allUl){
+            String [] words = (String[])request.getSession().getAttribute(":: marker");
+        }
+        String longestWord;
+        for (String word : words) {
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
+            }
+        }
+        driver.findElement(By.id("email")).sendKeys("inna@@example.com");
+        driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");
+        */
+
+    }
+}
