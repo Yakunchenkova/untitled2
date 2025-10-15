@@ -23,7 +23,16 @@ public class TestYakunchenkova {
     }
 
     /* @AfterEach
-     public void closeDriver(){
+    public void {
+     WebElement color3 = driver.findElement(By.id("color3")); -// scroll(By...)
+                color3.click(); // нужно проскролить  страницу.
+        jse = (JavascriptExecutor)driver;
+        jse.executeScript("document.getElementById('color3').value = 'Yellow';");
+        jse.executeScript("window.scrollBy(0,500)",");
+    }
+
+    @AfterAll
+     public static void closeDriver(){
          if(driver != null){
              driver.close();
              driver.quit();
@@ -38,15 +47,26 @@ public class TestYakunchenkova {
         driver.findElement(By.id("drink2")).click();
         driver.findElement(By.id("drink3")).click();
         /* ТРЕБУЕТ ДОРАБОТКИ!!!
-        WebElement color3 = driver.findElement(By.id("color3"));
-                color3.click(); - нужно спуститься ниже по странице.
-        jse = (JavascriptExecutor)driver;
-        jse.executeScript("document.getElementById('color3').value = 'Yellow';");
-        jse.executeScript("window.scrollBy(0,500)",");
-        driver.findElement(By.id("automation")).click();
+    @Test2
+    public void colorVar(){
 
-        List<WebElement> allUl = driver.findElements(By.tagName("ul"));
-        int number = allUl.size();
+        driver.findElement(By.id("automation")).click(); // октрываем список с выбором и выбираем
+        Alert alert = driver switchTo().alert();
+        String expected = "Yes";// Нужно сделать выбор
+        String actual = "Yes";
+        alert.accept(): // Закрываем окно
+        Assertion.assertEquals(expected, actual)
+
+        }
+    @Test 3
+    public void emailInput{
+    driver.findElement(By.id("email")).sendKeys("inna@@example.com"); // вводим e-mail
+    }
+    @Test4
+    public void automationVar{
+
+        List<WebElement> allUl = driver.findElements(By.tagName("ul"));// созадем массив из ul
+        int number = allUl.size(); // получаем количество элементов в массиве
         for(WebElement oneUl : allUl){
             String [] words = (String[])request.getSession().getAttribute(":: marker");
         }
@@ -54,11 +74,15 @@ public class TestYakunchenkova {
         for (String word : words) {
             if (word.length() > longestWord.length()) {
                 longestWord = word;
-            }
+            } // назодим самый длинное имя в массиве
         }
-        driver.findElement(By.id("email")).sendKeys("inna@@example.com");
-        driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");
-        */
+        driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");// написать количество инструментов, описанных в пункте Automation tools,
+и написать инструмент из списка Automation tools, содержащий наибольшее количество символов
+    @Test 5
+    public void {
+        driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
+    }
+         */
 
     }
 }
