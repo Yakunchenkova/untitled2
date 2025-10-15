@@ -28,7 +28,7 @@ public class TestYakunchenkova {
                 color3.click(); // нужно проскролить  страницу.
         jse = (JavascriptExecutor)driver;
         jse.executeScript("document.getElementById('color3').value = 'Yellow';");
-        jse.executeScript("window.scrollBy(0,500)",");
+        jse.executeScript("window.scrollBy(0,-500)",");
     }
 
     @AfterAll
@@ -47,10 +47,15 @@ public class TestYakunchenkova {
         driver.findElement(By.id("drink2")).click();
         driver.findElement(By.id("drink3")).click();
         /* ТРЕБУЕТ ДОРАБОТКИ!!!
+    @Test 1
+     public void colorVar(){
+     driver.findElement(By.id("color3")).click();
+     }
     @Test2
-    public void colorVar(){
+    public void automationVar(){
 
         driver.findElement(By.id("automation")).click(); // октрываем список с выбором и выбираем
+        driver.findElement(By.Name("Yes")).click(); 
         Alert alert = driver switchTo().alert();
         String expected = "Yes";// Нужно сделать выбор
         String actual = "Yes";
