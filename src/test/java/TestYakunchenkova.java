@@ -46,6 +46,8 @@ public class TestYakunchenkova {
         driver.findElement(By.xpath(("//*[@type = \"password\"]"))).sendKeys("123");
         driver.findElement(By.id("drink2")).click();
         driver.findElement(By.id("drink3")).click();
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0,500)");
     }
         /* ТРЕБУЕТ ДОРАБОТКИ!!!
     @Test 1
