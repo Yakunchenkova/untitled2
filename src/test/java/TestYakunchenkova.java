@@ -65,7 +65,7 @@ public class TestYakunchenkova {
         }
     @Test 3
     public void emailInput{
-    driver.findElement(By.id("email")).sendKeys("inna@@example.com"); // вводим e-mail
+    driver.findElement(By.id("email")).sendKeys("inna@example.com"); // вводим e-mail
     }
     @Test4
     public void automationVar{
@@ -81,8 +81,9 @@ public class TestYakunchenkova {
                 longestWord = word;
             } // назодим самый длинное имя в массиве
         }
-        driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");// написать количество инструментов, описанных в пункте Automation tools,
-и написать инструмент из списка Automation tools, содержащий наибольшее количество символов
+        driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");
+        /*написать количество инструментов, описанных в пункте Automation tools,
+и написать инструмент из списка Automation tools, содержащий наибольшее количество символов*/
     @Test 5
     public void {
         driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
