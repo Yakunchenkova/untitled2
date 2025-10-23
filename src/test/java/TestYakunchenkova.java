@@ -50,6 +50,12 @@ public class TestYakunchenkova {
         jse.executeScript("scroll(0,500)");
     }
         /* ТРЕБУЕТ ДОРАБОТКИ!!!
+         try {
+           Thread.sleep(5000);
+        } catch (InterruptedException e) {
+           throw new RuntimeException(e);
+        }
+
     @Test 1
      public void colorVar(){
      driver.findElement(By.id("color3")).click();
