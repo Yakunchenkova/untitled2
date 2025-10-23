@@ -86,7 +86,7 @@ public class TestYakunchenkova {
         }
         driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");
         написать количество инструментов, описанных в пункте Automation tools,
-и написать инструмент из списка Automation tools, содержащий наибольшее количество символов*/
+и написать инструмент из списка Automation tools, содержащий наибольшее количество символов
     @Test 5
     public void {
         driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
