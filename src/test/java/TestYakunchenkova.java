@@ -54,7 +54,7 @@ public class TestYakunchenkova {
      public void colorVar(){
      driver.findElement(By.id("color3")).click();
      }
-  /*  @Test2
+    @Test2
     public void automationVar(){
 
         driver.findElement(By.id("automation")).click(); // октрываем список с выбором и выбираем
@@ -85,12 +85,11 @@ public class TestYakunchenkova {
             } // назодим самый длинное имя в массиве
         }
         driver.findElement(By.id("message")).sendKeys("{longestWord}+{number}");
-        /*написать количество инструментов, описанных в пункте Automation tools,
+        написать количество инструментов, описанных в пункте Automation tools,
 и написать инструмент из списка Automation tools, содержащий наибольшее количество символов*/
     @Test 5
     public void {
         driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
     }
-
-    */
+ */
 }
