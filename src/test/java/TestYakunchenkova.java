@@ -46,12 +46,13 @@ public class TestYakunchenkova {
         driver.findElement(By.xpath(("//*[@type = \"password\"]"))).sendKeys("123");
         driver.findElement(By.id("drink2")).click();
         driver.findElement(By.id("drink3")).click();
+    }
         /* ТРЕБУЕТ ДОРАБОТКИ!!!
     @Test 1
      public void colorVar(){
      driver.findElement(By.id("color3")).click();
      }
-    @Test2
+  /*  @Test2
     public void automationVar(){
 
         driver.findElement(By.id("automation")).click(); // октрываем список с выбором и выбираем
@@ -89,5 +90,5 @@ public class TestYakunchenkova {
         driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
     }
 
-    }
+    */
 }
