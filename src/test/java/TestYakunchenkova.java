@@ -87,7 +87,6 @@ public class TestYakunchenkova {
     public void {
         driver.findElement(By.id("submit0btn")).click();// нажимаем кнопку Submit
     }
-         */
 
     }
 }
